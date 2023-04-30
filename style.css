@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vh;
+  background: url(assets/waterdrops.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+.box {
+  position: relative;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+}
+.box .card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  width: 300px;
+  min-height: 400px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.75);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 25px 45px rgb;
+  transform-style: preserve-3d;
+}
