@@ -6,17 +6,18 @@
 }
 body {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 100vh;
-  background: url(assets/waterdrops.jpeg);
+  justify-content: flex-start;
+  min-width: 150vh;
+  background: url(assets/codioful.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: inherit;
 }
 .box {
   position: relative;
   border-radius: 20px;
   transform-style: preserve-3d;
+  left: 50px;
+  top: 10px;
 }
 .box .card {
   position: relative;
@@ -45,4 +46,5 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.75);
     border-left: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
+    box-shadow: 0 25px 45px rgb;  
 }
