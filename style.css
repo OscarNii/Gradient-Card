@@ -32,19 +32,34 @@ body {
   box-shadow: 0 25px 45px rgb;
   transform-style: preserve-3d;
 }
-.element
+.elements {
+  position: relative;
+  top: 50px;
+  left: -30px;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateZ(80px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.75);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 25px 45px rgb;
+}
+.elements .bg ::before
 {
-    position: relative;
-    top: 50px;
-    left: -30px;
-    width: 100px;
-    height: 100px;
-    background: rgba(255, 255, 255, 0.1);
-    transform: translateZ(80px);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-top: 1px solid rgba(255, 255, 255, 0.75);
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    box-shadow: 0 25px 45px rgb;  
+    content: '';
+  position: absolute;
+  inset: 0;
+  background: url(assets/Quotation-PNG.png);
+  background-size: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: 0.5s;
+}
+.box:hover .elements.bg::before
+{
+  opacity: 1;
 }
