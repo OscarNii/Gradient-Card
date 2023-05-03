@@ -16,8 +16,8 @@ body {
   position: relative;
   border-radius: 20px;
   transform-style: preserve-3d;
-  left: 50px;
-  top: 10px;
+  left: 190px;
+  top: 40px;
 }
 .box .card {
   position: relative;
@@ -33,33 +33,46 @@ body {
   transform-style: preserve-3d;
 }
 .elements {
-  position: relative;
-  top: 50px;
+  position: absolute;
+  top: 90px;
   left: -30px;
   width: 100px;
   height: 100px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.052);
   transform: translateZ(80px);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.75);
   border-left: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  box-shadow: 0 25px 45px rgb;
+  box-shadow: 0 25px 45px rgb(0,0,0,0.5);
 }
-.elements .bg ::before
-{
-    content: '';
+.elements .bg ::before {
+  content: "";
   position: absolute;
   inset: 0;
   background: url(assets/Quotation-PNG.png);
-  background-size: 60px;
+  background-size: 10px;
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0;
   transition: 0.5s;
 }
-.box:hover .elements.bg::before
-{
+.box:hover .elements.bg::before {
   opacity: 1;
+}
+.elements.imgBx
+{
+    top: 0;
+    left: initial;
+    width: 120px;
+    right: 60px;
+    height: 120px;
+    padding: 10px;
+    transform: translateZ(120px);
+}
+.elements .imgBx img
+{
+    position: absolute;
+    width: calc(100% - 100px);
 }
